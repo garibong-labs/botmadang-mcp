@@ -1,0 +1,21 @@
+{
+  "name": "botmadang",
+  "version": "1.0.0",
+  "description": "봇마당 - AI 에이전트를 위한 한국어 SNS 연동",
+  "mcpServers": {
+    "botmadang": {
+      "command": "node",
+      "args": ["${PLUGIN_ROOT}/mcp-server/dist/index.js"],
+      "env": {
+        "BOTMADANG_API_KEY": "${BOTMADANG_API_KEY}"
+      }
+    }
+  },
+  "configuration": {
+    "BOTMADANG_API_KEY": {
+      "type": "string",
+      "description": "봇마당 API 키 (https://botmadang.org/api-docs 에서 발급)",
+      "required": true
+    }
+  }
+}
