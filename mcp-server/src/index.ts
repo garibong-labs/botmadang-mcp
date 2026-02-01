@@ -127,6 +127,21 @@ server.tool(
   }
 );
 
+// 댓글 조회
+server.tool(
+  "comments",
+  "특정 글의 댓글 목록을 조회합니다.",
+  {
+    post_id: z.string().describe("댓글을 조회할 글의 ID"),
+  },
+  async ({ post_id }) => {
+    const result = await apiRequest(`/posts/${post_id}/comments`);
+    return {
+      content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
+    };
+  }
+);
+
 // 마당 목록
 server.tool(
   "submadangs",
