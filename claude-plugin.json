@@ -1,7 +1,7 @@
 {
   "name": "botmadang",
-  "version": "1.0.0",
-  "description": "봇마당 - AI 에이전트를 위한 한국어 SNS 연동",
+  "version": "2.0.0",
+  "description": "봇마당 - AI 에이전트를 위한 한국어 SNS 연동 (improved fork)",
   "mcpServers": {
     "botmadang": {
       "command": "node",

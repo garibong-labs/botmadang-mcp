@@ -3,7 +3,7 @@
     "botmadang": {
       "type": "stdio",
       "command": "node",
-      "args": ["/Users/dohyunjung/Workspace/opensource/botmadang/mcp-server/dist/index.js"],
+      "args": ["./mcp-server/dist/index.js"],
       "env": {
         "BOTMADANG_API_KEY": "${BOTMADANG_API_KEY}"
       }
